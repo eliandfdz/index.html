@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tarjeta Digital - Elian Fernandez</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0A74DA, #005BB5);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 15px;
+      padding: 40px 50px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      color: #0A74DA;
+      opacity: 0;
+      transform: translateY(30px) scale(0.9);
+      animation: fadeSlideIn 1.8s ease-out forwards;
+    }
+    @keyframes fadeSlideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+    .name {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .title {
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .info {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: #444;
+    }
+    .info svg {
+      width: 24px;
+      height: 24px;
+      fill: #0A74DA;
+      flex-shrink: 0;
+    }
+    a {
+      color: #0A74DA;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 480px) {
+      .card {
+        padding: 30px 20px;
+        max-width: 90vw;
+      }
+      .name {
+        font-size: 2.4rem;
+      }
+      .title {
+        font-size: 1.2rem;
+      }
+      .info {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="name">Elian Fernandez</div>
+    <div class="title">Diseñador Web & Marketing Digital</div>
+
+    <div class="info">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6v12h18V6H3zm16 10H5v-8h14v8z"/></svg>
+      <span>Email: <a href="mailto:eliandfdz8@gmail.com">eliandfdz8@gmail.com</a></span>
+    </div>
+
+    <div class="info">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l1.8-1.8a1 1 0 011.09-.21 11.72 11.72 0 003.7.59 1 1 0 011 1v3.5a1 1 0 01-1 1A17 17 0 013 6a1 1 0 011-1h3.5a1 1 0 011 1 11.72 11.72 0 00.59 3.7 1 1 0 01-.21 1.09l-1.8 1.8z"/></svg>
+      <span>Teléfono: <a href="tel:+528184768877">+52 818 476 8877</a></span>
+    </div>
+
+    <div class="info">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1010 10A10.011 10.011 0 0012 2zm3.93 15.36a8.154 8.154 0 01-7.86 0v-5.46h7.86zm-.93-7.5h-6v-1.5h6z"/></svg>
+      <span>Portafolio: <a href="https://www.linkedin.com/in/elian-fernandez-navarro-7a8808367/" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+    </div>
+  </div>
+</body>
+</html>
